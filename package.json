@@ -6,16 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aldilan/Nitfolio.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aldilan/Nitfolio/issues"
+  },
+  "homepage": "https://github.com/Aldilan/Nitfolio#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.0.24"
-  },
-  "dependencies": {
-    "particles.js": "^2.0.0",
-    "typed.js": "^2.0.12"
   }
 }
