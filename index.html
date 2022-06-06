@@ -11,37 +11,37 @@
     <title>Nitfolio</title>
 </head>
 <body class="bg-[#0a182f]">
-    <nav class="xl:hidden fixed top-0 bg-pink-200 z-[51]">
-        <div class="relative h-screen w-[300px] flex flex-col text-center gap-y-3 px-24">
-            <button class="absolute right-4 top-3 text-xl"><i class="fa-solid fa-x"></i></button>
-            <h2 class="text-2xl mt-10 mb-5">MENU</h2>
+    <nav class="xl:hidden right-0 translate-x-full fixed top-0 bg-[#081325] z-[51] transition-all duration-500" id="slideNavbar">
+        <div class="relative h-screen w-[300px] flex flex-col text-center gap-y-3 px-24 text-white">
+            <button class="absolute right-4 top-3 text-xl" id="closeSlideNavbar"><i class="fa-solid fa-x"></i></button>
+            <h2 class="text-2xl mt-10 mb-5 text-[#6cdbbf]">MENU</h2>
             <a class="pb-1 relative after:contents-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:hover:w-full after:h-[2px] after:-z-10 after:bg-[#6cdbbf] after:transition-all after:duration-700 navbar1" href="#about">ABOUT</a>
             <a class="pb-1 relative after:contents-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:hover:w-full after:h-[2px] after:-z-10 after:bg-[#6cdbbf] after:transition-all after:duration-700 navbar1" href="#skills">SKILLS</a>
             <a class="pb-1 relative after:contents-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:hover:w-full after:h-[2px] after:-z-10 after:bg-[#6cdbbf] after:transition-all after:duration-700 navbar1" href="#projects">PROJECTS</a>
             <a class="pb-1 relative after:contents-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:hover:w-full after:h-[2px] after:-z-10 after:bg-[#6cdbbf] after:transition-all after:duration-700 navbar1" href="#certificates">CERTIFICATES</a>
             <a class="pb-1 relative after:contents-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:hover:w-full after:h-[2px] after:-z-10 after:bg-[#6cdbbf] after:transition-all after:duration-700 navbar1" href="#contact">CONTACT</a>
-            <div class="w-full bg-black absolute left-1/2 -translate-x-1/2 bottom-0 py-4">
-                <a class="text-white" href="">DOWNLOAD CV</a>
+            <div class="w-full bg-[#081325] hover:bg-[#6cdbbf] transition-all duration-500 absolute left-1/2 -translate-x-1/2 bottom-0 py-4">
+                <a class="text-white" href="https://drive.google.com/file/d/13YhMwQJS-ByKg-4Ic1mTAPrvHnNrgSVH/view?usp=sharing">DOWNLOAD CV</a>
             </div>
         </div>
     </nav>
     <nav class="text-[#ccd6f6] w-full bg-[#0a182f]/50 flex justify-center gap-x-4 sticky backdrop-blur-sm top-0 py-4 z-50" data-aos="fade-in">
-        <div class="xl:w-[200px] w-full flex justify-start px-6" data-aos="fade-right">
-            dskfjds
+        <div class="xl:w-[200px] w-full flex justify-start px-6">
+            Nitfolio
         </div>
-        <div class="flex justify-end w-full px-6 xl:hidden">
-            <i class="fa-solid fa-bars" data-aos="fade-left"></i>
-        </div>
-        <div class="w-full xl:w-[1000px] hidden xl:flex items-center justify-end xl:px-6 gap-4" data-aos="fade-left">
+        <button id="openSlideNavbar" class="flex justify-end w-full px-6 xl:hidden">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="w-full xl:w-[1000px] hidden xl:flex items-center justify-end xl:px-6 gap-4">
             <a class="pb-1 relative after:contents-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:hover:w-full after:h-[2px] after:-z-10 after:bg-[#6cdbbf] after:transition-all after:duration-700 navbar2" href="#about">ABOUT</a>
             <a class="pb-1 relative after:contents-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:hover:w-full after:h-[2px] after:-z-10 after:bg-[#6cdbbf] after:transition-all after:duration-700 navbar2" href="#skills">SKILLS</a>
             <a class="pb-1 relative after:contents-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:hover:w-full after:h-[2px] after:-z-10 after:bg-[#6cdbbf] after:transition-all after:duration-700 navbar2" href="#projects">PROJECTS</a>
             <a class="pb-1 relative after:contents-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:hover:w-full after:h-[2px] after:-z-10 after:bg-[#6cdbbf] after:transition-all after:duration-700 navbar2" href="#certificates">CERTIFICATES</a>
             <a class="pb-1 relative after:contents-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:hover:w-full after:h-[2px] after:-z-10 after:bg-[#6cdbbf] after:transition-all after:duration-700 navbar2" href="#contact">CONTACT</a>
-            <span><a class="bg-[#6cdbbf] px-3 py-1 rounded-full text-white hover:opacity-60 transition-all" href="">DOWNLOAD CV</a></span>
+            <span><a class="bg-[#6cdbbf] px-3 py-1 rounded-full text-white hover:opacity-60 transition-all" href="https://drive.google.com/file/d/13YhMwQJS-ByKg-4Ic1mTAPrvHnNrgSVH/view?usp=sharing">DOWNLOAD CV</a></span>
         </div>
     </nav>
-    <main class="mx-auto px-4 xl:w-[1200px] grid gap-y-4 text-[#c2ccea] font-montserrat">
+    <main class="overflow-x-hidden mx-auto px-4 xl:w-[1200px] grid gap-y-4 text-[#c2ccea] font-montserrat">
         <section class="grid grid-cols-2 gap-4 xl:flex xl:justify-center" id="about">
             <div data-aos="fade-right" class="flex flex-col border-t-2 border-[#c2ccea] pt-4 w-full xl:w-72">
                 <h2 class="text-2xl text-[#0a182f] font-ubuntu" id="stroke">ALDILAN</h2>
@@ -54,13 +54,13 @@
                 <span class="text-[#6cdbbf]">Student</span>
             </div>
             <div data-aos="fade-left" class="flex col-span-2 justify-end gap-x-4 xl:flex-col border-t-2 border-[#c2ccea] pt-4 xl:w-64 gap-y-1">
-                <a class="hover:text-[#4267B2] transition-all duration-500" href=""><i class="fa-brands fa-facebook"></i><span class="hidden xl:inline"> Facebook</span></a>
-                <a class="transition-all duration-500 hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-red-500 hover:to-violet-600 hover:bg-clip-text hover:text-transparent" href=""><i class="fa-brands fa-instagram"></i><span class="hidden xl:inline"> Instagram</span></a>
-                <a class="hover:text-[#171715] transition-all duration-500" href=""><i class="fa-brands fa-github"></i><span class="hidden xl:inline"> GitHub</span></a>
-                <a class="hover:text-[#0e76a8] transition-all duration-500" href=""><i class="fa-brands fa-linkedin-in"></i><span class="hidden xl:inline"> Linkedin</span></a>
+                <a class="hover:text-[#4267B2] transition-all duration-500" href="https://www.facebook.com/aldilan.180705/"><i class="fa-brands fa-facebook"></i><span class="hidden xl:inline"> Facebook</span></a>
+                <a class="transition-all duration-500 hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-red-500 hover:to-violet-600 hover:bg-clip-text hover:text-transparent" href="https://www.instagram.com/dilannhr_/"><i class="fa-brands fa-instagram"></i><span class="hidden xl:inline"> Instagram</span></a>
+                <a class="hover:text-[#171715] transition-all duration-500" href="https://github.com/Aldilan"><i class="fa-brands fa-github"></i><span class="hidden xl:inline"> GitHub</span></a>
+                <a class="hover:text-[#0e76a8] transition-all duration-500" href="https://www.linkedin.com/in/aldilan-hermawan-780393205/"><i class="fa-brands fa-linkedin-in"></i><span class="hidden xl:inline"> Linkedin</span></a>
             </div>
             <div data-aos="fade-left" class=" border-t-2 border-[#c2ccea] pt-4 col-span-2">
-                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur hic ex cupiditate! Maxime, ipsam ut! Voluptate fuga temporibus corrupti architecto?</span>
+                <span class="after:content-['.'] after:text-[#6cdbbf]">I am a student from SMK Wikrama Bogor majoring in software engineering and focusing on website and mobile application development</span>
             </div>
         </section>
         <section class="flex flex-col gap-4 xl:flex-row" id="skills">
@@ -84,47 +84,47 @@
                     </div>
                     <div class="p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-[#6cdbbf] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 frontend" data-tilt>
                         <img data-aos="flip-up" class="w-24 h-24 grayscale group-hover:grayscale-0 transition-all duration-500" src="assets/img/icon/CSS.svg" alt="">
-                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.w3schools.com/html/html_intro.asp">CSS</a>
+                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.w3schools.com/css/css_intro.asp">CSS</a>
                     </div>
                     <div class="p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-[#6cdbbf] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 backend" data-tilt>
                         <img data-aos="flip-up" class="w-24 h-24 grayscale group-hover:grayscale-0 transition-all duration-500" src="assets/img/icon/PHP.svg" alt="">
-                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.w3schools.com/html/html_intro.asp">PHP</a>
+                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.php.net/manual/en/intro-whatis.php">PHP</a>
                     </div>
                     <div class="p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-[#6cdbbf] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 frontend" data-tilt>
                         <img data-aos="flip-up" class="w-24 h-24 grayscale group-hover:grayscale-0 transition-all duration-500" src="assets/img/icon/Javascript.svg" alt="">
-                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.w3schools.com/html/html_intro.asp">JS</a>
+                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.w3schools.com/whatis/whatis_js.asp">JS</a>
                     </div>
                     <div class="p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-[#6cdbbf] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 frontend" data-tilt>
                         <img data-aos="flip-up" class="w-24 h-24 grayscale group-hover:grayscale-0 transition-all duration-500" src="assets/img/icon/Bootstrap.svg" alt="">
-                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.w3schools.com/html/html_intro.asp">Bootstrap</a>
+                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.w3schools.com/whatis/whatis_bootstrap.asp">Bootstrap</a>
                     </div>
                     <div class="p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-[#6cdbbf] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 backend" data-tilt>
                         <img data-aos="flip-up" class="w-24 h-24 grayscale group-hover:grayscale-0 transition-all duration-500" src="assets/img/icon/Laravel.svg" alt="">
-                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.w3schools.com/html/html_intro.asp">Laravel</a>
+                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://laravel.com/docs/9.x">Laravel</a>
                     </div>
                     <div class="p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-[#6cdbbf] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 frontend" data-tilt>
                         <img data-aos="flip-up" class="w-24 h-24 grayscale group-hover:grayscale-0 transition-all duration-500" src="assets/img/icon/TailwindCSS.svg" alt="">
-                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.w3schools.com/html/html_intro.asp">TailwindCSS</a>
+                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://tailwindcss.com/docs/installation">TailwindCSS</a>
                     </div>
                     <div class="p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-[#6cdbbf] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 other" data-tilt>
                         <img data-aos="flip-up" class="w-24 h-24 grayscale group-hover:grayscale-0 transition-all duration-500" src="assets/img/icon/Flutter.svg" alt="">
-                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.w3schools.com/html/html_intro.asp">Flutter</a>
+                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://docs.flutter.dev/get-started/install">Flutter</a>
                     </div>
                     <div class="p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-[#6cdbbf] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 other" data-tilt>
                         <img data-aos="flip-up" class="w-24 h-24 grayscale group-hover:grayscale-0 transition-all duration-500" src="assets/img/icon/Git.svg" alt="">
-                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.w3schools.com/html/html_intro.asp">Git</a>
+                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://git-scm.com/">Git</a>
                     </div>
                     <div class="p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-[#6cdbbf] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 other" data-tilt>
                         <img data-aos="flip-up" class="w-24 h-24 grayscale group-hover:grayscale-0 transition-all duration-500" src="assets/img/icon/VSCode.svg" alt="">
-                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.w3schools.com/html/html_intro.asp">VS Code</a>
+                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://code.visualstudio.com/">VS Code</a>
                     </div>
                     <div class="p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-[#6cdbbf] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 other" data-tilt>
                         <img data-aos="flip-up" class="w-24 h-24 grayscale group-hover:grayscale-0 transition-all duration-500" src="assets/img/icon/AdobeXD.svg" alt="">
-                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.w3schools.com/html/html_intro.asp">Adobe XD</a>
+                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.adobe.com/products/xd/learn/get-started/what-is-adobe-xd-used-for.html">Adobe XD</a>
                     </div>
                     <div class="p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-[#6cdbbf] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 other" data-tilt>
                         <img data-aos="flip-up" class="w-24 h-24 grayscale group-hover:grayscale-0 transition-all duration-500" src="assets/img/icon/PowerBI.svg" alt="">
-                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://www.w3schools.com/html/html_intro.asp">Power BI</a>
+                        <a class="absolute hidden xl:inline left-1/2 -translate-x-1/2 bottom-0 translate-y-5 group-hover:-translate-y-1 group-hover:text-white hover:border-b-[1px] border-white transition-all duration-500" href="https://powerbi.microsoft.com/en-my/what-is-power-bi/">Power BI</a>
                     </div>
                 </div>
             </div>
@@ -149,111 +149,115 @@
                         <span class="text-[#6cdbbf] font-lato">HTML, CSS, PHP</span>
                     </div>
                     <div class="absolute z-10 opacity-0 bg-[#0a182f] w-full h-1/2 bottom-0 translate-y-1/2 flex justify-center items-start group-hover:translate-y-0 group-hover:opacity-100 transition duration-700">
-                        <button class="text-lg font-light text-[#6cdbbf] border-[1px] border-[#6cdbbf] py-1 px-6 mt-3 hover:bg-[#6cdbbf] hover:text-white transition-all rounded-sm">LEARN MORE</button>
+                        <button class="text-lg font-light text-[#6cdbbf] border-[1px] border-[#6cdbbf] py-1 px-6 mt-3 hover:bg-[#6cdbbf] hover:text-white transition-all rounded-sm"><a href="https://github.com/Aldilan/Nitrotech">ViEW PROJECT</a></button>
                     </div>
-                    <img class="w-96 group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000" src="https://picsum.photos/seed/picsum/200" id="Nitrotech" alt="Nitrotech Website">
+                    <img class="w-96 aspect-video group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000" src="assets/img/projects/Nitrotech.png" id="Nitrotech" alt="Nitrotech Website">
                 </div>
                 <div data-aos="zoom-in" class="relative overflow-hidden group">
                     <div class="absolute z-10 opacity-0 bg-[#0a182f] w-full h-1/2 top-0 -translate-y-1/2 flex flex-col justify-center items-center group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700">
-                        <h3 class="text-xl font-ubuntu">NITROTECH</h3>
-                        <span class="text-[#6cdbbf] font-lato">HTML, CSS, PHP</span>
+                        <h3 class="text-xl font-ubuntu">NITCRETE</h3>
+                        <span class="text-[#6cdbbf] font-lato">HTML, Bootstrap, JS, Laravel</span>
                     </div>
                     <div class="absolute z-10 opacity-0 bg-[#0a182f] w-full h-1/2 bottom-0 translate-y-1/2 flex justify-center items-start group-hover:translate-y-0 group-hover:opacity-100 transition duration-700">
-                        <button class="text-lg font-light text-[#6cdbbf] border-[1px] border-[#6cdbbf] py-1 px-6 mt-3 hover:bg-[#6cdbbf] hover:text-white transition-all rounded-sm">LEARN MORE</button>
+                        <button class="text-lg font-light text-[#6cdbbf] border-[1px] border-[#6cdbbf] py-1 px-6 mt-3 hover:bg-[#6cdbbf] hover:text-white transition-all rounded-sm"><a href="https://github.com/Aldilan/Nitcrete">ViEW PROJECT</a></button>
                     </div>
-                    <img class="w-96 group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000" src="https://picsum.photos/seed/picsum/200" id="Nitcrete" alt="Nitcrete Website">
+                    <img class="w-96 aspect-video group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000" src="assets/img/projects/Nitcrete.png" id="Nitcrete" alt="Nitcrete Website">
                 </div>
                 <div data-aos="zoom-in" class="relative overflow-hidden group">
                     <div class="absolute z-10 opacity-0 bg-[#0a182f] w-full h-1/2 top-0 -translate-y-1/2 flex flex-col justify-center items-center group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700">
-                        <h3 class="text-xl font-ubuntu">NITROTECH</h3>
-                        <span class="text-[#6cdbbf] font-lato">HTML, CSS, PHP</span>
+                        <h3 class="text-xl font-ubuntu">NITLAXI</h3>
+                        <span class="text-[#6cdbbf] font-lato">HTML, CSS, JS, Laravel</span>
                     </div>
                     <div class="absolute z-10 opacity-0 bg-[#0a182f] w-full h-1/2 bottom-0 translate-y-1/2 flex justify-center items-start group-hover:translate-y-0 group-hover:opacity-100 transition duration-700">
-                        <button class="text-lg font-light text-[#6cdbbf] border-[1px] border-[#6cdbbf] py-1 px-6 mt-3 hover:bg-[#6cdbbf] hover:text-white transition-all rounded-sm">LEARN MORE</button>
+                        <button class="text-lg font-light text-[#6cdbbf] border-[1px] border-[#6cdbbf] py-1 px-6 mt-3 hover:bg-[#6cdbbf] hover:text-white transition-all rounded-sm"><a href="https://github.com/Aldilan/Nitlaxi">ViEW PROJECT</a></button>
                     </div>
-                    <img class="w-96 group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000" src="https://picsum.photos/seed/picsum/200" id="Nitlaxi" alt="Nitlaxi Website">
+                    <img class="w-96 aspect-video group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000" src="assets/img/projects/Nitlaxi.png" id="Nitlaxi" alt="Nitlaxi Website">
                 </div>
                 <div data-aos="zoom-in" class="relative overflow-hidden group">
                     <div class="absolute z-10 opacity-0 bg-[#0a182f] w-full h-1/2 top-0 -translate-y-1/2 flex flex-col justify-center items-center group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700">
-                        <h3 class="text-xl font-ubuntu">NITROTECH</h3>
-                        <span class="text-[#6cdbbf] font-lato">HTML, CSS, PHP</span>
+                        <h3 class="text-xl font-ubuntu">NIT TAC TOE</h3>
+                        <span class="text-[#6cdbbf] font-lato">HTML, CSS, JS</span>
                     </div>
                     <div class="absolute z-10 opacity-0 bg-[#0a182f] w-full h-1/2 bottom-0 translate-y-1/2 flex justify-center items-start group-hover:translate-y-0 group-hover:opacity-100 transition duration-700">
-                        <button class="text-lg font-light text-[#6cdbbf] border-[1px] border-[#6cdbbf] py-1 px-6 mt-3 hover:bg-[#6cdbbf] hover:text-white transition-all rounded-sm">LEARN MORE</button>
+                        <button class="text-lg font-light text-[#6cdbbf] border-[1px] border-[#6cdbbf] py-1 px-6 mt-3 hover:bg-[#6cdbbf] hover:text-white transition-all rounded-sm"><a href="https://aldilan.github.io/Nit-Tac-Toe/">ViEW PROJECT</a></button>
                     </div>
-                    <img class="w-96 group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000" src="https://picsum.photos/seed/picsum/200" id="Nit-Tac-Toe" alt="Nit-Tac-Toe Website">
+                    <img class="w-96 aspect-video group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000" src="assets/img/projects/Nit-Tac-Toe.png" id="Nit-Tac-Toe" alt="Nit-Tac-Toe Website">
                 </div>
                 <div data-aos="zoom-in" class="relative overflow-hidden group">
                     <div class="absolute z-10 opacity-0 bg-[#0a182f] w-full h-1/2 top-0 -translate-y-1/2 flex flex-col justify-center items-center group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700">
-                        <h3 class="text-xl font-ubuntu">NITROTECH</h3>
-                        <span class="text-[#6cdbbf] font-lato">HTML, CSS, PHP</span>
+                        <h3 class="text-xl font-ubuntu">NITPLAYLIST</h3>
+                        <span class="text-[#6cdbbf] font-lato">HTML, TailwindCSS, JS</span>
                     </div>
                     <div class="absolute z-10 opacity-0 bg-[#0a182f] w-full h-1/2 bottom-0 translate-y-1/2 flex justify-center items-start group-hover:translate-y-0 group-hover:opacity-100 transition duration-700">
-                        <button class="text-lg font-light text-[#6cdbbf] border-[1px] border-[#6cdbbf] py-1 px-6 mt-3 hover:bg-[#6cdbbf] hover:text-white transition-all rounded-sm">LEARN MORE</button>
+                        <button class="text-lg font-light text-[#6cdbbf] border-[1px] border-[#6cdbbf] py-1 px-6 mt-3 hover:bg-[#6cdbbf] hover:text-white transition-all rounded-sm"><a href="https://aldilan.github.io/Nitplaylist/">ViEW PROJECT</a></button>
                     </div>
-                    <img class="w-96 group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000" src="https://picsum.photos/seed/picsum/200" id="Nitplaylist" alt="Nitplaylist Website">
+                    <img class="w-96 aspect-video group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000" src="assets/img/projects/Nitplaylist.png" id="Nitplaylist" alt="Nitplaylist Website">
                 </div>
                 <div data-aos="zoom-in" class="relative overflow-hidden group">
                     <div class="absolute z-10 opacity-0 bg-[#0a182f] w-full h-1/2 top-0 -translate-y-1/2 flex flex-col justify-center items-center group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700">
-                        <h3 class="text-xl font-ubuntu">NITROTECH</h3>
-                        <span class="text-[#6cdbbf] font-lato">HTML, CSS, PHP</span>
+                        <h3 class="text-xl font-ubuntu">NITCOUNT</h3>
+                        <span class="text-[#6cdbbf] font-lato">HTML, TailwindCSS, JS</span>
                     </div>
                     <div class="absolute z-10 opacity-0 bg-[#0a182f] w-full h-1/2 bottom-0 translate-y-1/2 flex justify-center items-start group-hover:translate-y-0 group-hover:opacity-100 transition duration-700">
-                        <button class="text-lg font-light text-[#6cdbbf] border-[1px] border-[#6cdbbf] py-1 px-6 mt-3 hover:bg-[#6cdbbf] hover:text-white transition-all rounded-sm">LEARN MORE</button>
+                        <button class="text-lg font-light text-[#6cdbbf] border-[1px] border-[#6cdbbf] py-1 px-6 mt-3 hover:bg-[#6cdbbf] hover:text-white transition-all rounded-sm"><a href="https://aldilan.github.io/Nitcount/">ViEW PROJECT</a></button>
                     </div>
-                    <img class="w-96 group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000" src="https://picsum.photos/seed/picsum/200" id="Nitcount" alt="Nitcount Website">
+                    <img class="w-96 aspect-video group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000" src="assets/img/projects/Nitcount.png" id="Nitcount" alt="Nitcount Website">
                 </div>
                 <div data-aos="zoom-in" class="relative overflow-hidden group">
                     <div class="absolute z-10 opacity-0 bg-[#0a182f] w-full h-1/2 top-0 -translate-y-1/2 flex flex-col justify-center items-center group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700">
-                        <h3 class="text-xl font-ubuntu">NITROTECH</h3>
-                        <span class="text-[#6cdbbf] font-lato">HTML, CSS, PHP</span>
+                        <h3 class="text-xl font-ubuntu">NITTYPE</h3>
+                        <span class="text-[#6cdbbf] font-lato">HTML, TailwindCSS, JS</span>
                     </div>
                     <div class="absolute z-10 opacity-0 bg-[#0a182f] w-full h-1/2 bottom-0 translate-y-1/2 flex justify-center items-start group-hover:translate-y-0 group-hover:opacity-100 transition duration-700">
-                        <button class="text-lg font-light text-[#6cdbbf] border-[1px] border-[#6cdbbf] py-1 px-6 mt-3 hover:bg-[#6cdbbf] hover:text-white transition-all rounded-sm">LEARN MORE</button>
+                        <button class="text-lg font-light text-[#6cdbbf] border-[1px] border-[#6cdbbf] py-1 px-6 mt-3 hover:bg-[#6cdbbf] hover:text-white transition-all rounded-sm"><a href="https://aldilan.github.io/Nittype/">ViEW PROJECT</a></button>
                     </div>
-                    <img class="w-96 group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000" src="https://picsum.photos/seed/picsum/200" id="Nittype" alt="Nittype Website">
+                    <img class="w-96 aspect-video group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000" src="assets/img/projects/Nittype.png" id="Nittype" alt="Nittype Website">
                 </div>
             </div>
         </section>
         <section class="flex flex-col justify-center items-center" id="certificates">
-            <div class=" mt-4 pt-4 border-t-2 border-[#c2ccea] w-full">
-                <div class="swiper w-full aspect-auto h-64 xl:w-[800px] xl:h-[400px]">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                    <!-- Slides -->
-                        <div class="swiper-slide object-cover">
-                            <img class="object-cover" src="https://picsum.photos/seed/picsum/400/300" alt=""></div>
-                        <div class="swiper-slide object-cover">
-                            <img class="object-cover" src="https://picsum.photos/seed/picsum/400/300" alt=""></div>
-                        <div class="swiper-slide object-cover">
-                            <img class="object-cover" src="https://picsum.photos/seed/picsum/400/300" alt=""></div>
+            <div class=" w-full flex flex-col xl:flex-row gap-x-4">
+                <div data-aos="fade-right" class="flex flex-col mt-4 pt-4 border-t-2 border-[#c2ccea] w-[300px] gap-y-1">
+                    <h2 class="text-[#6cdbbf] text-xl font-ubuntu">SKILLS</h2>
+                    <span>Certificates HTML</span>
+                    <span>2022</span>
+                </div>
+                <div class="xl:mt-4 pt-4 xl:border-t-2 w-full">                     
+                    <div data-aos="fade-left" class="swiper xl:border-[#c2ccea] w-full aspect-[4/3]">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide bg-[url('https://picsum.photos/seed/picsum/200')] bg-no-repeat bg-cover"></div>
+                            <div class="swiper-slide bg-[url('https://picsum.photos/seed/picsum/200')] bg-no-repeat bg-cover"></div>
+                            <div class="swiper-slide bg-[url('https://picsum.photos/seed/picsum/200')] bg-no-repeat bg-cover"></div>
                         </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
+                        <div class="swiper-button-prev !text-[#6cdbbf]"></div>
+                        <div class="swiper-button-next !text-[#6cdbbf]"></div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="mx-auto px-4 xl:w-[1200px] pb-8 grid gap-y-4 text-[#c2ccea] font-montserrat">
+    <div class="fixed right-4 top-full translate-y-1/2 w-60 bg-[#6cdbbf] rounded-md border-2 border-[#0a182f] z-50 transition-all duration-500" id="contactNotif">
+        <div class="relative">
+            <button class="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white border-2 border-[#6cdbbf] rounded-full flex items-center justify-center text-lg text-[#6cdbbf] hover:bg-[#6cdbbf] hover:text-white transition-all duration-300" id="closeNotifContact"><i class="fa-solid fa-x"></i></button>
+            <div class="p-4">
+                <span>Thank you for sending a message, I will reply as soon as possible</span>
+            </div>
+        </div>
+    </div>
+    <footer class="mx-auto xl:w-[1200px] pb-8 grid gap-y-4 text-[#c2ccea] font-montserrat">
         <section data-aos="zoom-in-up" class="flex flex-col justify-center items-center mt-4 pt-4" id="contact">
-            <div class="grid text-center gap-y-1">                    
+            <form name="nitfolioContact" class="grid text-center gap-y-1">
                 <div class="relative mb-8 font-ubuntu">
                     <h2 class="text-5xl xl:text-6xl text-[#0a182f]" id="stroke">CONTACT</h2>
                     <span class="text-2xl absolute top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2 text-[#6cdbbf]">Contact Me</span>
                 </div>
-                <input class="xl:w-[700px] w-full px-3 bg-[#081325] text-[#6cdbbf] focus: focus:outline-none focus:ring-2 focus:ring-[#6cdbbf] placeholder:text-[#ccd6f6] py-2" type="text" placeholder="Name">
+                <input class="xl:w-[700px] w-full px-3 bg-[#081325] text-[#6cdbbf] focus: focus:outline-none focus:ring-2 focus:ring-[#6cdbbf] placeholder:text-[#ccd6f6] py-2" type="text" name="name" placeholder="Name">
                 <input class="px-3 bg-[#081325] text-[#6cdbbf] focus: focus:outline-none focus:ring-2 focus:ring-[#6cdbbf] placeholder:text-[#ccd6f6] py-2 invalid:text-red-500 invalid:focus:ring-red-600 peer invalid:border-red-600/30" type="email" name="email" id="email" placeholder="Email">
                 <span class="peer-invalid:block hidden px-3 mb-1 text-sm text-left text-red-600">Must contain email!</span>
                 <textarea class="px-3 bg-[#081325] text-[#6cdbbf] focus: focus:outline-none focus:ring-2 focus:ring-[#6cdbbf] placeholder:text-[#ccd6f6] py-2" name="message" id="message" cols="30" rows="10" placeholder="Your Messages"></textarea>
-                <button class="py-1 text-[#6cdbbf] hover:bg-[#6cdbbf] hover:text-white transition-all ml-auto w-32 border-2 border-[#6cdbbf] rounded-md">SEND</button>
-            </div>
+                <button class="mt-2 py-1 text-[#6cdbbf] hover:bg-[#6cdbbf] hover:text-white transition-all ml-auto w-32 border-2 border-[#6cdbbf] rounded-md" type="submit">SEND</button>
+            </form>
         </section>
     </footer>
 

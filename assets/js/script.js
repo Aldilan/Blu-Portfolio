@@ -1,3 +1,5 @@
+//Navbar Button Function
+
 const navbarButtons = document.querySelectorAll('.navbar')
 navbarButtons.forEach(function (navbarButton) {
     navbarButton.addEventListener('click', function (e) {
@@ -8,6 +10,23 @@ navbarButtons.forEach(function (navbarButton) {
         e.target.setAttribute('class',"pb-1 relative after:contents-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:hover:w-full after:h-[2px] after:-z-10 after:bg-[#6cdbbf] after:transition-all after:duration-700 navbar")
     })
 })
+
+
+//Navbar Slide Button Function
+
+const slideNavbar = document.getElementById('slideNavbar')
+const openSlideNavbar = document.getElementById('openSlideNavbar')
+const closeSlideNavbar = document.getElementById('closeSlideNavbar')
+openSlideNavbar.addEventListener('click', function (e) {
+    slideNavbar.classList.remove('translate-x-full')
+    // slideNavbar.classList.add('right-0')
+})
+closeSlideNavbar.addEventListener('click', function (e) {
+    slideNavbar.classList.add('translate-x-full')
+    // slideNavbar.classList.remove('right-0')
+})
+
+//Skill Button Function
 
 const skillImages = document.querySelectorAll('#skillImages div')
 const skillButtons = document.querySelectorAll('#skillButtons div a')
@@ -58,18 +77,21 @@ skillButtons.forEach(function (skillButton) {
     })
 })
 
+
+//Project Button Function
+
 const projectButtons = document.querySelectorAll('#projects div div a')
 const projectImageButtons = document.querySelectorAll('#projects div div img')
 projectButtons.forEach(function (projectButton) {
     projectButton.addEventListener('mouseover', function (e) {
         console.log(e.target.textContent)
         let projectImageButton = document.getElementById(e.target.textContent)
-        projectImageButton.setAttribute('class', "scale-110 w-96 group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000")
+        projectImageButton.setAttribute('class', "scale-110 w-96 aspect-video group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000")
     })
     projectButton.addEventListener('mouseout', function (e) {
         console.log(e.target.textContent)
         let projectImageButton = document.getElementById(e.target.textContent)
-        projectImageButton.setAttribute('class', "w-96 group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000")
+        projectImageButton.setAttribute('class', "w-96 aspect-video group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000")
     })
 })
 
@@ -80,7 +102,7 @@ const pageButtons2 = document.querySelectorAll('.navbar2')
 window.onscroll = () => {
     sectionPages.forEach(function (sectionPage) {
         let top = window.scrollY;
-        let offset = sectionPage.offsetTop-150
+        let offset = sectionPage.offsetTop - ((sectionPage.id === 'contact') ? 300 : 150)
         let height = sectionPage.offsetHeight
         let id = sectionPage.getAttribute('id');
         if (top >= offset && top < offset + height) {
@@ -95,3 +117,33 @@ window.onscroll = () => {
         }
     })
 }
+
+
+//Contact Form Function
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwcmnWZDe1DgetvDoP9fZ8p8pFO41M9W9S4FY_tUQe4SRnL8zTvR7TI9qaoWLqMUGOj/exec'
+const form = document.forms['nitfolioContact']
+const contactNotif = document.getElementById('contactNotif')
+const closeNotifContact = document.getElementById('closeNotifContact')
+closeNotifContact.addEventListener('click', function (e) {
+    contactNotif.classList.replace('-translate-y-36','translate-y-1/2')
+})
+function autoCloseNotifContact() {
+    if (contactNotif.className == "fixed right-4 top-full -translate-y-36 w-60 bg-[#6cdbbf] rounded-md border-2 border-[#0a182f] z-50 transition-all duration-500") {
+        contactNotif.classList.replace('-translate-y-36','translate-y-1/2')
+    }
+}
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        console.log('Success!', response)
+        contactNotif.classList.replace('translate-y-1/2', '-translate-y-36')
+        setTimeout(() => {
+            autoCloseNotifContact()
+        }, 7000); 
+        form.reset();
+    })
+    .catch(error => console.error('Error!', error.message))
+})

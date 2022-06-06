@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 #stroke{
     text-shadow: -1px -1px 0 #6cdbbf, 1px -1px 0 #6cdbbf, -1px 1px 0 #6cdbbf, 1px 1px 0 #6cdbbf;
 }
@@ -19,4 +23,8 @@
 }
 ::-webkit-scrollbar-thumb:active {
     background: linear-gradient(transparent,#c2ccea);
+}
+
+section {
+    scroll-margin-top: 4rem;
 }
