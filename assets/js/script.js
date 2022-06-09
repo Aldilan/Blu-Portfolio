@@ -50,13 +50,13 @@ skillButtons.forEach(function (skillButton) {
             skillButtonPos = 'all'
             e.target.setAttribute('class', "relative after:content-[''] after:absolute after:left-0 after:-translate-x-1 after:px-4 after:w-full after:hover:w-full xl:after:hover:w-0 after:hover:px-4 after:bg-[#6cdbbf] after:-z-10 after:h-full xl:after:px-10 xl:after:hover:px-10 after:transition-all after:duration-700 text-[#0a182f] hover:text-[#0a182f] transition-all")
         }else if (e.target.textContent == 'Frontend') {
-            skillButtonPos = "p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-slate-600 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 frontend"
+            skillButtonPos = "p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-[#6cdbbf] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 frontend"
             e.target.setAttribute('class', "relative after:content-[''] after:absolute after:left-0 after:-translate-x-1 after:px-10 after:w-full after:hover:w-full xl:after:hover:w-0 after:hover:px-10 after:bg-[#6cdbbf] after:-z-10 after:h-full xl:after:px-10 xl:after:hover:px-10 after:transition-all after:duration-700 text-[#0a182f] hover:text-[#0a182f] transition-all")
         }else if (e.target.textContent == 'Backend') {
-            skillButtonPos = "p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-slate-600 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 backend"
+            skillButtonPos = "p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-[#6cdbbf] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 backend"
             e.target.setAttribute('class', "relative after:content-[''] after:absolute after:left-0 after:-translate-x-1 after:px-9 after:w-full after:hover:w-full xl:after:hover:w-0 after:hover:px-9 after:bg-[#6cdbbf] after:-z-10 after:h-full xl:after:px-10 xl:after:hover:px-10 after:transition-all after:duration-700 text-[#0a182f] hover:text-[#0a182f] transition-all")
         }else {
-            skillButtonPos = "p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-slate-600 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 other"
+            skillButtonPos = "p-4 xl:p-8 relative w-40 flex items-center justify-center overflow-hidden group before:content-[''] before:w-0 before:h-0 before:bg-[#6cdbbf] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:hover:w-full before:hover:h-full before:transition-all before:duration-500 other"
             e.target.setAttribute('class', "relative after:content-[''] after:absolute after:left-0 after:-translate-x-1 after:px-7 after:w-full after:hover:w-full xl:after:hover:w-0 after:hover:px-7 after:bg-[#6cdbbf] after:-z-10 after:h-full xl:after:px-10 xl:after:hover:px-10 after:transition-all after:duration-700 text-[#0a182f] hover:text-[#0a182f] transition-all")
         }
 
@@ -92,6 +92,9 @@ projectButtons.forEach(function (projectButton) {
         console.log(e.target.textContent)
         let projectImageButton = document.getElementById(e.target.textContent)
         projectImageButton.setAttribute('class', "w-96 aspect-video group-hover:scale-110 group-hover:contrast-50 group-hover:grayscale contrast-100 transiton-all duration-1000")
+    })
+    projectButton.addEventListener('click', function (e) {
+        e.preventDefault()
     })
 })
 

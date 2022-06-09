@@ -796,12 +796,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.aspect-\[4\/3\]{
-  aspect-ratio: 4 / 3;
-}
-
 .aspect-video{
   aspect-ratio: 16 / 9;
+}
+
+.aspect-\[4\/3\]{
+  aspect-ratio: 4 / 3;
 }
 
 .h-screen{
@@ -814,6 +814,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-1\/2{
   height: 50%;
+}
+
+.h-96{
+  height: 24rem;
 }
 
 .h-8{
@@ -1831,14 +1835,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(10 24 47 / var(--tw-bg-opacity));
 }
 
-.bg-pink-200{
+.bg-\[\#081325\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
-}
-
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(8 19 37 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#0a182f\]\/50{
@@ -1853,11 +1852,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#081325\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(8 19 37 / var(--tw-bg-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
@@ -2005,6 +1999,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .object-scale-down{
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+.object-center{
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-4{
@@ -2238,6 +2237,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#6cdbbf\]{
+  --tw-text-opacity: 1;
+  color: rgb(108 219 191 / var(--tw-text-opacity));
+}
+
 .text-\[\#ccd6f6\]{
   --tw-text-opacity: 1;
   color: rgb(204 214 246 / var(--tw-text-opacity));
@@ -2251,11 +2255,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#0a182f\]{
   --tw-text-opacity: 1;
   color: rgb(10 24 47 / var(--tw-text-opacity));
-}
-
-.text-\[\#6cdbbf\]{
-  --tw-text-opacity: 1;
-  color: rgb(108 219 191 / var(--tw-text-opacity));
 }
 
 .\!text-\[\#6cdbbf\]{
@@ -2885,11 +2884,6 @@ section {
 .hover\:bg-\[\#6cdbbf\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(108 219 191 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\#081325\]:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(8 19 37 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-tr:hover{
