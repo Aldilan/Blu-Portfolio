@@ -609,6 +609,10 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.mb-32{
+  margin-bottom: 8rem;
+}
+
 .mb-5{
   margin-bottom: 1.25rem;
 }
@@ -639,18 +643,6 @@ video {
 
 .mt-4{
   margin-top: 1rem;
-}
-
-.mt-32{
-  margin-top: 8rem;
-}
-
-.mb-96{
-  margin-bottom: 24rem;
-}
-
-.mb-32{
-  margin-bottom: 8rem;
 }
 
 .flex{
@@ -1029,12 +1021,12 @@ video {
   line-height: 1.75rem;
 }
 
-.font-light{
-  font-weight: 300;
-}
-
 .font-bold{
   font-weight: 700;
+}
+
+.font-light{
+  font-weight: 300;
 }
 
 .\!text-\[\#6cdbbf\]{
